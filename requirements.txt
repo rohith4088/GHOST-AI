@@ -1,0 +1,7 @@
+python==3.12.4
+numpy
+matplotlib
+redis
+langchain
+requests
+uvicorn

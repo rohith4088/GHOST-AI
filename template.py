@@ -5,12 +5,14 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 
-project_name = "textSummarizer"
-
+backend = "backend"
+frontend = "frontend"
 list_of_files = [
     ".github/workflows/.gitkeep",
     "Dockerfile",
     "requirements.txt",
+    f"{backend}/main.py",
+    f"{frontend}/App.js"
 ]
 
 
