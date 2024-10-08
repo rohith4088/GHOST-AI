@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  backend:
+    build: .
+    volumes:
+      - ./backend:/app/backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python3 backend/main.py
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app/frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    command: npm start --prefix frontend
+

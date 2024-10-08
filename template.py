@@ -12,7 +12,9 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     f"{backend}/main.py",
-    f"{frontend}/App.js"
+    f"{frontend}/App.js",
+    ".dockerignore",
+    "docker-compose.yml",
 ]
 
 

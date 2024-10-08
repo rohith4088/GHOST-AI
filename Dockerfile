@@ -1,12 +1,20 @@
 FROM python:3.12.4
 
-RUN apt update -y && apt install awscli -y
+
+RUN apt-get update && apt-get install -y \
+    awscli \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
-COPY . /app
 
-RUN pip install -r requirements.txt
+COPY requirements.txt .
 
 
-CMD ["python3", "app.py"]
+RUN pip install --no-cache-dir -r requirements.txt
 
+COPY backend /app/backend
+COPY frontend /app/frontend
+
+
+CMD ["python3", "backend/main.py"]
