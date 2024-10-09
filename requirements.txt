@@ -16,3 +16,6 @@ nltk==3.8.1
 numpy==1.23.5
 regex==2023.3.23
 GitPython
+google-generativeai 
+langchain-google-genai
+unstructured==0.5.11

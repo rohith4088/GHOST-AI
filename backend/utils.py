@@ -1,5 +1,6 @@
 import re 
 import os 
+import nltk
 nltk.download('punkt')
 
 def clean_and_tokenize(text):
