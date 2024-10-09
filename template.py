@@ -15,6 +15,7 @@ list_of_files = [
     f"{backend}/utils.py",
     f"{frontend}/App.js",
     f"{backend}/file_processing.py",
+    f"{backend}/tempdir.py",
     ".dockerignore",
     "docker-compose.yml",
 ]
