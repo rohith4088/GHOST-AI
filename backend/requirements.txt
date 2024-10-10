@@ -4,4 +4,4 @@ redis
 requests
 uvicorn
 fastapi
-dotenv
+python-dotenv

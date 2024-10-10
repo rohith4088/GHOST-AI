@@ -9,8 +9,6 @@ backend = "backend"
 frontend = "frontend"
 list_of_files = [
     ".github/workflows/.gitkeep",
-    "Dockerfile",
-    "requirements.txt",
     f"{backend}/main.py",
     f"{backend}/utils.py",
     f"{frontend}/App.js",
@@ -20,6 +18,7 @@ list_of_files = [
     f"{backend}/.env",
     f"{backend}/app.py",
     f"{backend}/questions.py",
+    f"{backend}/redis_client.py",
     ".dockerignore",
     "docker-compose.yml",
 ]
