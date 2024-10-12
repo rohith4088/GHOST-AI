@@ -6,6 +6,6 @@ PROJECT HELPER AI
 ## docker and git  commands 
 ``git pull``
 ``docker compose build``
-``docker compose run``
+``docker compose up``
 
 ### There are two different docker files for both frontend and backend , so that they remain isloated
