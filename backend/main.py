@@ -1,19 +1,19 @@
 import os
 import tempfile
-from dotenv import load_dotenv
-from langchain import PromptTemplate, LLMChain
-# from langchain.llms import OpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
-from config import WHITE, GREEN, RESET_COLOR,model_name
-from utils import format_user_question
-from file_processing import clone_github_repo, load_and_index_files
-from questions import ask_question, QuestionContext
+# from dotenv import load_dotenv
+# from langchain import PromptTemplate, LLMChain
+# # from langchain.llms import OpenAI
+# from langchain_google_genai import ChatGoogleGenerativeAI
+# from config import WHITE, GREEN, RESET_COLOR,model_name
+# from utils import format_user_question
+# from file_processing import clone_github_repo, load_and_index_files
+# from questions import ask_question, QuestionContext
 from fastapi import FastAPI, Form, Request
 from fastapi.middleware.cors import CORSMiddleware
 
 
-load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# load_dotenv()
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # def main():
 #     github_url = input("Enter the GitHub URL of the repository: ")
