@@ -87,5 +87,5 @@ app.add_middleware(
 
 @app.get('/')
 def read_root():
-    return "hello backend"
+    return {"message": "hello backend"}
 
