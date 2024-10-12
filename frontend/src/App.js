@@ -6,7 +6,7 @@ function App() {
 
   const fetchBackendData = async () => {
     try {
-      console.log('API URL:', process.env.REACT_APP_API_URL); // Log the API URL
+      console.log('API URL:', process.env.REACT_APP_API_URL); 
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/`);
       setBackendData(JSON.stringify(response.data));
     } catch (error) {

@@ -5,3 +5,5 @@ requests
 uvicorn
 fastapi
 python-dotenv
+google-generativeai
+langchain
