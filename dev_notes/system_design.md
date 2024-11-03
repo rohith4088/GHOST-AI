@@ -43,7 +43,7 @@ defining the deamon process that handles the processing of interdependency betwe
              these 900 reuslts are shortend to 1 result by the n+1th agent.
              |
              |
-             output (NLP TEXT)             
+             output (NLP TEXT)
 
 
 recurssive prompting-->  a. load the cache of that respective file/files.
@@ -64,7 +64,6 @@ FRONTEND
    |
    |
    result
-
 
 
 IN-SCOPE
