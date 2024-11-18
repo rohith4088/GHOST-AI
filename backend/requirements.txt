@@ -8,3 +8,5 @@ python-dotenv
 google-generativeai
 langchain
 langchain-google-genai
+crewai==0.76.9
+crewai-tools==0.13.4
