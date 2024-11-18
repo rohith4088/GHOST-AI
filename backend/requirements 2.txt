@@ -1,6 +1,0 @@
-numpy
-matplotlib
-redis
-requests
-uvicorn
-fastapi
