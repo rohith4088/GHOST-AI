@@ -14,7 +14,7 @@ from config import settings
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def retry_on_exception(retries=3, delay=1):
+def retry_on_exception(retries=3, delay=5):
     """Decorator to retry functions on exception."""
     def decorator(func):
         @wraps(func)
@@ -158,7 +158,7 @@ class ProjectAnalyzer:
         }
 
     @sleep_and_retry
-    @limits(calls=50, period=60)
+    @limits(calls=2, period=100)
     async def analyze_project(self) -> Dict:
         """Analyze the entire project structure."""
         analyses = []

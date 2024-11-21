@@ -25,17 +25,17 @@ class Settings(BaseSettings):
     LLM_PROVIDER: LLMProvider = LLMProvider.CREW_AI
 
     # OpenAI Configuration
-    OPENAI_API_KEY:str = os.getenv("OPENAI_API_KEY", "").strip()
-    TEXT_COMPLETION_OPENAI_API_KEY:str  = os.getenv("TEXT_COMPLETION_OPENAI_API_KEY", "").strip()
-    OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-instruct")
+    #OPENAI_API_KEY:str = os.getenv("OPENAI_API_KEY", "").strip()
+    #TEXT_COMPLETION_OPENAI_API_KEY:str  = os.getenv("TEXT_COMPLETION_OPENAI_API_KEY", "").strip()
+    #OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-instruct")
 
     # # Anthropic Configuration
     # ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     # ANTHROPIC_MODEL: str = os.getenv("ANTHROPIC_MODEL", "claude-3-opus-20240229")
 
     # # Google AI Configuration
-    # GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-    # GOOGLE_MODEL: str = os.getenv("GOOGLE_MODEL", "gemini-pro")
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
 
     # # Crew AI Configuration
     CREW_AI_TEMPERATURE: float = 0.7
@@ -49,8 +49,8 @@ class Settings(BaseSettings):
     CORS_ORIGINS: List[str] = ["*"]
 
     # Rate Limiting
-    RATE_LIMIT_CALLS: int = 50  # Adjust based on provider limits
-    RATE_LIMIT_PERIOD: int = 60
+    RATE_LIMIT_CALLS: int = 2  # Adjust based on provider limits
+    RATE_LIMIT_PERIOD: int = 100
 
     # Concurrency
     MAX_CONCURRENT_ANALYSES: int = 5
