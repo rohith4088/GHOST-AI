@@ -151,10 +151,10 @@ function App() {
         </div>
       )}
 
-      {/* Rest of your results rendering code remains the same */}
+      {}
       {results && (
         <div style={{ marginTop: '30px' }}>
-          {/* Your existing results rendering code */}
+          {}
         </div>
       )}
     </div>
@@ -162,3 +162,5 @@ function App() {
 }
 
 export default App;
+
+

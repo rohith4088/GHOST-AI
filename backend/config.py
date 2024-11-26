@@ -25,9 +25,9 @@ class Settings(BaseSettings):
     LLM_PROVIDER: LLMProvider = LLMProvider.CREW_AI
 
     # OpenAI Configuration
-    #OPENAI_API_KEY:str = os.getenv("OPENAI_API_KEY", "").strip()
-    #TEXT_COMPLETION_OPENAI_API_KEY:str  = os.getenv("TEXT_COMPLETION_OPENAI_API_KEY", "").strip()
-    #OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-instruct")
+    OPENAI_API_KEY:str = os.getenv("OPENAI_API_KEY", "").strip()
+    TEXT_COMPLETION_OPENAI_API_KEY:str  = os.getenv("TEXT_COMPLETION_OPENAI_API_KEY", "").strip()
+    OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-instruct")
 
     # # Anthropic Configuration
     # ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
@@ -49,8 +49,8 @@ class Settings(BaseSettings):
     CORS_ORIGINS: List[str] = ["*"]
 
     # Rate Limiting
-    RATE_LIMIT_CALLS: int = 2  # Adjust based on provider limits
-    RATE_LIMIT_PERIOD: int = 100
+    RATE_LIMIT_CALLS: int = 2  
+    RATE_LIMIT_PERIOD: int = 1000
 
     # Concurrency
     MAX_CONCURRENT_ANALYSES: int = 5
