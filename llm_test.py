@@ -50,7 +50,7 @@ def main():
     client = LocalLLMClient()
 
     # Example usage
-    prompt = "Explain quantum computing in simple terms"
+    prompt = "are you runnign locally"
     response = client.generate_text(prompt)
     
     if response:
