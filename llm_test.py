@@ -2,7 +2,7 @@ import requests
 import json
 
 class LocalLLMClient:
-    def __init__(self, base_url='http://localhost:1234/v1'):
+    def __init__(self, base_url='http://127.0.0.1:1234/'):
         """
         Initialize the client for locally hosted LLM via LM Studio
         
@@ -37,9 +37,11 @@ class LocalLLMClient:
                 data=json.dumps(payload)
             )
             response.raise_for_status()
-            
             result = response.json()
-            return result['choices'][0]['message']['content']
+            if result['choices']:
+                return result['choices'][0]['message']['content']
+            else:
+                return result
         
         except requests.RequestException as e:
             print(f"Error connecting to local LLM: {e}")
