@@ -19,6 +19,7 @@ list_of_files = [
     f"{backend}/app.py",
     f"{backend}/questions.py",
     f"{backend}/redis_client.py",
+    f"{backend}/agent_test.py",
     ".dockerignore",
     "docker-compose.yml",
 ]
