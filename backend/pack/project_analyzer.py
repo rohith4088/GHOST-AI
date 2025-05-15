@@ -195,7 +195,7 @@ class ProjectAnalyzer:
         
         return {
             'files': valid_analyses,
-            'dependency_graph': nx.node_link_data(self.dependency_graph),
+            'dependency_graph': nx.node_link_data(self.dependency_graph,edges = "edges"),
             'project_analysis': project_analysis,
             'summary': self._generate_project_summary(valid_analyses)
         }

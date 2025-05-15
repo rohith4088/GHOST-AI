@@ -33,7 +33,7 @@ tech_stack = {
         "ai_integration": "LangChain + LlamaIndex"
     },
     "orchestration": {
-        "workflow_engine": "n8n",
+        "workflow_engine": "n8n","gumloop"
         "message_broker": "RabbitMQ",
         "distributed_coordination": "Apache ZooKeeper"
     },
