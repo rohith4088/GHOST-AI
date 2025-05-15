@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo-instruct")
     
     # Local LLM Configuration
-    LOCAL_LLM_BASE_URL: str = os.getenv("LOCAL_LLM_BASE_URL", "http://192.168.0.113:1234")
+    LOCAL_LLM_BASE_URL: str = os.getenv("LOCAL_LLM_BASE_URL", "http://192.168.0.116:1234")
     LOCAL_LLM_MODEL: str = os.getenv("LOCAL_LLM_MODEL", "llama-3.2-3b-instruct")
     
     # Gemini Configuration
