@@ -49,3 +49,5 @@ tech_stack = {
         "diagram_generation": "Diagram as Code (D2 lang)"
     }
 }
+
+
